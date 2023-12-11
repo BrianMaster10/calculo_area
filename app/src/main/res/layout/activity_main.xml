@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <GridLayout
+        android:id="@+id/polygon_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:useDefaultMargins="false">
+
+        <ImageButton
+            android:id="@+id/buttonCua"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Cuadrado"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cua"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/buttonRect"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Rectángulo"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/rect" />
+
+        <ImageButton
+            android:id="@+id/buttonTri"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Triángulo"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/trian" />
+
+        <ImageButton
+            android:id="@+id/buttonCir"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Círculo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circ" />
+
+        <ImageButton
+            android:id="@+id/buttonPent"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Pentágono"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pent" />
+
+        <ImageButton
+            android:id="@+id/buttonHex"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Hexágono"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hexag" />
+
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_texts"
+        android:layout_width="232dp"
+        android:layout_height="129dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/edit_text_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.5dp"
+            android:text="Base" />
+
+        <TextView
+            android:id="@+id/edit_text_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.5dp"
+            android:text="Altura" />
+
+        <TextView
+            android:id="@+id/edit_text_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.5dp"
+            android:text="Area" />
+
+        <TextView
+            android:id="@+id/selected_polygon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.5dp"
+            android:text="Polígono seleccionado: Ninguno" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/number_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="239dp"
+        android:layout_margin="50dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button_number_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="0" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/calculate_clear_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Borrar" />
+
+    </LinearLayout>
+
+</LinearLayout>
